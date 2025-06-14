@@ -29,7 +29,7 @@
 }
 body {
   font-size: 28px;
-  background-image: url(background.jpg);
+  background-color: #333;
   height: auto;
   width: auto;
   background-size: 1500px;
@@ -46,12 +46,12 @@ ul {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
-  background: rgba(48, 48, 48, 0.567);
-box-shadow: 0 8px 36px 0 rgba( 31, 38, 135, 0.37 );
+  background: #232323;
+box-shadow: 0 8px 36px 0 rgba(56, 56, 56, 0.287);
 backdrop-filter: blur( 4px );
 -webkit-backdrop-filter: blur( 4px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+border-radius: 0px;
+border: 0px solid rgba( 255, 255, 255, 0.18 );
 font-size: medium;
   opacity: 0;
   transform: translateY(-50px);
@@ -120,12 +120,12 @@ footer {
   box-shadow: 0 2px 8px rgba(0,0,0,0.07);
   max-width: 700px;
   margin: 40px auto;
-  background: rgba(48, 48, 48, 0.567);
-box-shadow: 0 8px 36px 0 rgba( 31, 38, 135, 0.37 );
+  background: #232323;
+box-shadow: 0 8px 36px 0 rgba(31, 38, 135, 0);
 backdrop-filter: blur( 4px );
 -webkit-backdrop-filter: blur( 4px );
 border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+border: 0px solid rgba( 255, 255, 255, 0.18 );
 font-size: medium;
   opacity: 0;
   transform: translateY(-50px);
@@ -150,7 +150,7 @@ body, html {
 }
 
 .wrapper {
-  min-height: 100vh;
+  min-height: 5vh;
   display: flex;
   flex-direction: column;
 }
@@ -158,10 +158,6 @@ body, html {
 .main-content {
   flex: 1;
 }
-
 footer {
-  background: #222;
-  color: #fff;
-  padding: 7px 0;
-  text-align: center;
+  display: none;
 }
