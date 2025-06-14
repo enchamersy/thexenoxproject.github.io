@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    @keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+   @keyframes slideDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 1; /* Adjust for readability */
+  pointer-events: none;
+}
+  @font-face {
+  font-family: 'CaviarDreams';
+  src: url(CaviarDreams_Bold.ttf);
+}
+body {
+  font-size: 28px;
+  background-image: url(background.jpg);
+  height: auto;
+  width: auto;
+  background-size: 1500px;
+  font-family: 'CaviarDreams', sans-serif;
+  color: aliceblue;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background: rgba(48, 48, 48, 0.567);
+box-shadow: 0 8px 36px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+font-size: medium;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: slideDown 0.7s ease-out forwards;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgba(127, 164, 223, 0.52);
+}
+
+.active {
+  background-color: rgba(119, 0, 174, 0.816);
+}
+h3 {
+      font-size: 2.5rem;
+      text-align: center;
+      font-family: 'CaviarDreams', sans-serif;
+      
+    }
+
+h1 {
+      font-size: medium;
+      text-align: center;
+      font-family: 'CaviarDreams', sans-serif;
+      
+    }
+
+footer {
+   position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #f2f2f2;
+  color: #333;
+  text-align: center;
+  padding: 0.3rem 0;   /* Reduced padding */
+  font-size: 0.85rem;  /* Smaller text */
+    opacity: 0;
+  transform: translateY(50px); /* Start lower, slide up */
+  animation: slideUp 0.7s ease-out forwards;
+}
+
+.center {
+  text-align: center;
+  margin-top: 20px; /* optional spacing */
+}
+.image-text-box {
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  max-width: 700px;
+  margin: 40px auto;
+  background: rgba(48, 48, 48, 0.567);
+box-shadow: 0 8px 36px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+font-size: medium;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: slideDown 0.7s ease-out forwards;
+}
+
+.box-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.box-text {
+  padding: 24px;
+  flex: 1;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="main-content">
+  <video autoplay muted loop playsinline id="bg-video">
+  <source src="background2.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="games.html">Games</a></li>
+  <li><a class="active" href="totum.html">TotumOS</a></li>
+  <li><a href="about.html">About Us</a></li>
+  
+</ul>
+
+<h3>TotumOS. Simple, Elegant, Private.</h3>
+<h1>TotumOS aims to be simple, intuitive, and privacy-focused, whilst providing powerful tools,<br>enabling users to have complete control over their system.</h1>
+<div class="image-text-box">
+  <img src="falcon.png" alt="Description" class="box-image">
+  <div class="box-text">
+    <h2>Simple</h2>
+    <p>Totum uses the Falcon Desktop environment, designed by the Xenox Project to be streamlined, simple and productive.</p>
+  </div>
+</div>
+<div class="image-text-box">
+  <img src="power.png" alt="Description" class="box-image">
+  <div class="box-text">
+    <h2>Streamlined</h2>
+    <p>Totum is Designed to be distraction free, allowing users to be even more productive.</p>
+  </div>
+</div>
+<div class="image-text-box">
+  <img src="term.png" alt="Description" class="box-image">
+  <div class="box-text">
+    <h2>Powerful</h2>
+    <p>Totum is Unix Like, comes with a powerful bash terminal, and tools like vim pre-installed.</p>
+  </div>
+</div>
+<footer
+  style="text-align: center; padding: 20px; background-color: rgba(48, 48, 48, 0.567); color: white; position: fixed; width: 100%; bottom: 0;">
+  <p>Copyright 2025 The Xenox Project. All rights reserved. Background Images by Richard Horvath on Unsplash. Animated Backgrounds by Loops & Dots Creative on Youtube</p>
+  </footer>
+    </div>
+</body>
+</html>
