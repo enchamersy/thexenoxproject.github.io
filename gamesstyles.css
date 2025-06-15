@@ -29,7 +29,6 @@
 }
 body {
   font-size: 28px;
-  background-image: url(background2.jpg);
   height: auto;
   width: auto;
   background-size: 1500px;
@@ -50,17 +49,17 @@ ul {
 box-shadow: 0 8px 36px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 4px );
 -webkit-backdrop-filter: blur( 4px );
-border-radius: 10px;
+border-radius: 50px;
 border: 0px solid rgba( 255, 255, 255, 0.18 );
 font-size: medium;
-opacity: 0;
+  opacity: 0;
   transform: translateY(-50px);
   animation: slideDown 0.7s ease-out forwards;
 
 }
 
 li {
-  float: left;
+  float: right;
 }
 
 li a {
@@ -151,4 +150,11 @@ footer {
 h4 {
   font-size: large;
   margin: 0.5rem 0;
+}
+span {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }

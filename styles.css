@@ -29,7 +29,6 @@
 }
 body {
   font-size: 28px;
-  background-image: url(background.jpg);
   height: auto;
   width: auto;
   background-size: 1500px;
@@ -50,7 +49,7 @@ ul {
 box-shadow: 0 8px 36px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 4px );
 -webkit-backdrop-filter: blur( 4px );
-border-radius: 10px;
+border-radius: 50px;
 border: 0px solid rgba( 255, 255, 255, 0.18 );
 font-size: medium;
   opacity: 0;
@@ -60,7 +59,7 @@ font-size: medium;
 }
 
 li {
-  float: left;
+  float: right;
 }
 
 li a {
@@ -100,7 +99,7 @@ footer {
   background: #f2f2f2;
   color: #333;
   text-align: center;
-  padding: 0.3rem 0;   /* Reduced padding */
+  padding: 0rem 0;   /* Reduced padding */
   font-size: 0.85rem;  /* Smaller text */
     opacity: 0;
   transform: translateY(50px); /* Start lower, slide up */
@@ -120,11 +119,19 @@ footer {
   box-shadow: 0 8px 36px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 4px );
 -webkit-backdrop-filter: blur( 4px );
-border-radius: 10px;
+border-radius: 50px;
 border: 0px solid rgba( 255, 255, 255, 0.18 );
 
 }
 .center {
   text-align: center;
   margin-top: 20px; /* optional spacing */
+}
+
+span {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }

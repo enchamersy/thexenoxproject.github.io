@@ -42,12 +42,12 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #393939;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
-  background: #232323;
-box-shadow: 0 8px 36px 0 rgba(56, 56, 56, 0.287);
+  background: rgba(48, 48, 48, 0.567);
+box-shadow: 0 8px 36px 0 rgba(0, 0, 0, 0);
 backdrop-filter: blur( 4px );
 -webkit-backdrop-filter: blur( 4px );
 border-radius: 0px;
@@ -59,8 +59,9 @@ font-size: medium;
 
 }
 
+
 li {
-  float: left;
+  float: right;
 }
 
 li a {
@@ -160,4 +161,11 @@ body, html {
 }
 footer {
   display: none;
+}
+span {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
